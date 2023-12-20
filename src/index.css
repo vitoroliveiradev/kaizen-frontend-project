@@ -2,8 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
-  --bg-primary: "#aa4a2e";
+  --bg-primary: #aa4a2e;
+  --bg-black: #263238;
+  --bg-grey-primary: #4d4d4d;
+  --bg-grey-secondary: #717171;
+  --bg-neutral-silver: #E0E0E0;
+}
+
+.active {
+  color: var(--bg-primary);
 }

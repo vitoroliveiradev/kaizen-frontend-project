@@ -13,7 +13,9 @@ export const Navbar = () => {
       <nav>
         <div className={styles.left}>
           <NavLink to="/">
-            <h2>GoTrip.</h2>
+            <h2>
+              <span>Io</span>System.
+            </h2>
           </NavLink>
         </div>
         <div className={styles.right}>
@@ -25,7 +27,12 @@ export const Navbar = () => {
               X
             </button>
             <li onClick={() => setShowMenu(false)}>
-              <NavLink to="/">Home</NavLink>
+              <NavLink
+                className={({ isActive }) => (isActive ? "active" : "")}
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
             <li onClick={() => setShowMenu(false)}>
               <NavLink to="/contact">Contato</NavLink>

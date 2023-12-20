@@ -2,12 +2,12 @@
 .btnMenu {
   display: none;
 }
+
 /* Botão menu mobile */
 
 /* Buttons */
 
 #firstHeader {
-  background-color: var(--white);
   height: 80px;
 }
 
@@ -17,8 +17,12 @@
 
 #firstHeader .left a h2 {
   font-weight: bold !important;
-  color: var(--purple-blue);
+  color: var(--bg-primary);
   text-decoration: none;
+}
+
+#firstHeader .left a h2 span {
+  color: var(--bg-black);
 }
 
 #firstHeader nav {
