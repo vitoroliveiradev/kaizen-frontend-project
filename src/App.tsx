@@ -1,7 +1,14 @@
+import { Outlet } from "react-router-dom";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Footer } from "./components/Footer/Footer";
+import { Container } from "./components/Container/Container";
+
 export const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
-  )
-}
+    <Container>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </Container>
+  );
+};

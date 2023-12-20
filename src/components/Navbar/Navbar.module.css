@@ -1,0 +1,137 @@
+/* Botão menu mobile */
+.btnMenu {
+  display: none;
+}
+/* Botão menu mobile */
+
+/* Buttons */
+
+#firstHeader {
+  background-color: var(--white);
+  height: 80px;
+}
+
+#firstHeader .left a {
+  text-decoration: none;
+}
+
+#firstHeader .left a h2 {
+  font-weight: bold !important;
+  color: var(--purple-blue);
+  text-decoration: none;
+}
+
+#firstHeader nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#firstHeader nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#firstHeader nav ul li a {
+  text-decoration: none;
+  color: var(--grey);
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+}
+
+#firstHeader nav ul li a:hover,
+#firstHeader nav ul li a:active {
+  color: var(--purple-blue);
+}
+
+#firstHeader .right ul .btnClose {
+  display: none;
+}
+
+.card-bottom a {
+  text-decoration: none;
+}
+
+.listUserSettings {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.listUserSettings li {
+  cursor: pointer;
+  color: var(--grey);
+  font-weight: bold;
+}
+
+.listUserSettings li:hover {
+  color: var(--purple-blue);
+}
+
+.logout {
+  color: rgb(155, 40, 40) !important;
+}
+
+.logout:hover {
+  color: red !important;
+}
+
+@media screen and (max-width: 768px) {
+  #firstHeader .right ul {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: -600%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #firstHeader .right ul li a {
+    color: #fff;
+  }
+
+  #firstHeader .right ul.showList {
+    top: 0;
+  }
+
+  .activeUl {
+    top: 0;
+  }
+
+  #firstHeader .right ul .btnClose {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    top: 0.5rem;
+    right: 1rem;
+    width: fit-content;
+  }
+
+  #firstHeader .right ul .btnClose:hover {
+    color: var(--purple-blue);
+  }
+
+  .btnMenu {
+    display: block;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .btnMenu img {
+    max-width: 20px;
+  }
+}
