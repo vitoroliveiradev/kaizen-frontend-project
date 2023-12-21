@@ -6,10 +6,14 @@ import { Container } from "./components/Container/Container";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+
 export const App = () => {
   return (
     <>
       <Container>
+        <ToastContainer />
         <Navbar />
         <Outlet />
         <Footer />

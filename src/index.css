@@ -7,12 +7,9 @@
 
 :root {
   --bg-primary: #aa4a2e;
+  --bg-terciary: #dd6f4db9;
   --bg-black: #263238;
   --bg-grey-primary: #4d4d4d;
   --bg-grey-secondary: #717171;
-  --bg-neutral-silver: #E0E0E0;
-}
-
-.active {
-  color: var(--bg-primary);
+  --bg-neutral-silver: #e0e0e0;
 }

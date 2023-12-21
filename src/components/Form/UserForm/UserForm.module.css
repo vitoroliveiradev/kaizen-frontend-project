@@ -1,0 +1,11 @@
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+
+.form-control button {
+  background-color: red;
+}

@@ -1,6 +1,9 @@
 /* Botão menu mobile */
 .btnMenu {
   display: none;
+  font-size: 1.3rem;
+  color: var(--bg-primary);
+  font-weight: bold;
 }
 
 /* Botão menu mobile */
@@ -49,7 +52,7 @@
 
 #firstHeader nav ul li a:hover,
 #firstHeader nav ul li a:active {
-  color: var(--purple-blue);
+  color: var(--bg-primary);
 }
 
 #firstHeader .right ul .btnClose {
@@ -125,7 +128,7 @@
   }
 
   #firstHeader .right ul .btnClose:hover {
-    color: var(--purple-blue);
+    color: var(--bg-primary);
   }
 
   .btnMenu {
