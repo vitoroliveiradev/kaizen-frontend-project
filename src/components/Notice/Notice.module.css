@@ -1,0 +1,38 @@
+.noticeContainer {
+  border: 1px solid #fccf948f;
+}
+
+.noticeContent {
+  display: flex;
+  gap: 1rem;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.left {
+  padding: 2rem;
+}
+
+.left h3 {
+  color: var(--bg-primary);
+  margin-bottom: 1rem;
+}
+
+.left p {
+  color: var(--bg-grey-secondary);
+  letter-spacing: 1.2px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.right img {
+  width: 90%;
+}
