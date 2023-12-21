@@ -2,7 +2,7 @@ import styles from "./SliderComponent.module.css";
 
 import Slider from "react-slick";
 
-import ImageBackground from "../../assets/image.svg";
+import ImageBackground from "../../assets/background.png";
 
 export const SliderComponent = () => {
   const settings = {

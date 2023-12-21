@@ -13,3 +13,16 @@
   --bg-grey-secondary: #717171;
   --bg-neutral-silver: #e0e0e0;
 }
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-terciary);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 3px solid var(--bg-primary);
+}
