@@ -12,12 +12,12 @@ import { ToastContainer } from "react-toastify";
 export const App = () => {
   return (
     <>
+      <Navbar />
       <Container>
         <ToastContainer />
-        <Navbar />
         <Outlet />
-        <Footer />
       </Container>
+      <Footer />
     </>
   );
 };
