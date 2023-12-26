@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <div className={styles.containerFooter}>
       <h3>
-        &copy; 2023 Copyright Io <span>System.</span>
+        <span>&copy;</span> 2023 Copyright Io<span>System.</span>
       </h3>
     </div>
   );

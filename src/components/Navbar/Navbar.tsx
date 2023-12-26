@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <header id={styles.firstHeader}>
+    <header id={styles.header}>
       <nav>
         <div className={styles.left}>
           <NavLink to="/">

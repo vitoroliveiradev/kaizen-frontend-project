@@ -6,11 +6,11 @@ import { ToolsCompany } from "../../components/ToolsCompany/ToolsCompany";
 
 export const Home = () => {
   return (
-    <div>
+    <>
       <SliderComponent />
       <About />
       <Notice />
       <ToolsCompany />
-    </div>
+    </>
   );
 };

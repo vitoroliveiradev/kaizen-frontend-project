@@ -42,7 +42,7 @@ export const SliderComponent = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <Slider {...settings}>
         <div className={styles.slideContainer}>
           <div className={styles.left}>

@@ -1,3 +1,13 @@
+@keyframes textAnimation {
+  from {
+    transform: translateX(-200%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
 /* Botão menu mobile */
 .btnMenu {
   display: none;
@@ -10,59 +20,64 @@
 
 /* Buttons */
 
-#firstHeader {
+#header {
   width: 100%;
-  height: 80px;
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
-#firstHeader .left a {
+#header .left a {
   text-decoration: none;
 }
 
-#firstHeader .left a h2 {
+#header .left a h2 {
+  animation: textAnimation 1s;
   font-weight: bold !important;
   color: var(--bg-primary);
   text-decoration: none;
 }
 
-#firstHeader .left a h2 span {
-  color: var(--bg-black);
+#header .left a h2 span {
+  color: #FFF;
 }
 
-#firstHeader nav {
+#header nav {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #0000002e;
+  background-color: #2f2f2fbe;
   padding: 0 4.5rem;
 }
 
-#firstHeader nav ul {
+#header nav ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-#firstHeader nav ul li a {
+#header nav ul li a {
+  animation: textAnimation 1s;
   text-decoration: none;
-  color: var(--grey);
+  /* color: var(--grey); */
+  color: #FFF;
   transition: all 0.3s ease-in-out;
   font-weight: bold;
   padding: 0.2rem 0.6rem;
+  border-radius: 10px;
 }
 
-#firstHeader nav ul li a:hover,
-#firstHeader nav ul li a:active {
+#header nav ul li a:hover,
+#header nav ul li a:active {
+  background-color: #fff;
   color: var(--bg-primary);
 }
 
-#firstHeader .right ul .btnClose {
+#header .right ul .btnClose {
   display: none;
 }
 
@@ -87,10 +102,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  #firstHeader .right ul {
+  #header .right ul {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.9);
-    top: -1000%;
+    top: -100vh;
     left: 0;
     width: 100%;
     flex-direction: column;
@@ -101,11 +116,15 @@
     transition: all 0.3s ease-in-out;
   }
 
-  #firstHeader .right ul li a {
+  #header nav {
+    padding: 0 1rem;
+  }
+
+  #header .right ul li a {
     color: #fff;
   }
 
-  #firstHeader .right ul.showList {
+  #header .right ul.showList {
     top: 0;
   }
 
@@ -113,7 +132,7 @@
     top: 0;
   }
 
-  #firstHeader .right ul .btnClose {
+  #header .right ul .btnClose {
     display: block;
     position: absolute;
     background-color: transparent;
@@ -126,7 +145,7 @@
     width: fit-content;
   }
 
-  #firstHeader .right ul .btnClose:hover {
+  #header .right ul .btnClose:hover {
     color: var(--bg-primary);
   }
 

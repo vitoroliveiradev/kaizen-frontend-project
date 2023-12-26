@@ -7,3 +7,7 @@
   background-color: #595352b9;
   color: #c3c3c3;
 }
+
+span {
+  color: var(--bg-primary);
+}

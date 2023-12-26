@@ -39,3 +39,18 @@
   text-align: center;
   color: var(--bg-grey-secondary);
 }
+
+@media screen and (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+
+  .right {
+    border: none;
+  }
+
+  .right p,
+  .right span {
+    font-size: .8rem;
+  }
+}

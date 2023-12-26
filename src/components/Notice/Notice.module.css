@@ -24,7 +24,7 @@
 .left p {
   color: var(--bg-grey-secondary);
   letter-spacing: 1.2px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .right {
@@ -36,4 +36,20 @@
 
 .right img {
   width: 90%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .noticeContent {
+    flex-direction: column;
+  }
+
+  .right {
+    border: none;
+  }
+
+  .right p,
+  .right span {
+    font-size: .8rem;
+  }
 }
