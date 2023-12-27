@@ -20,6 +20,7 @@
   height: 300px;
   object-fit: cover;
   border-radius: 5px;
+  transform-origin: center;
 }
 
 .right {
