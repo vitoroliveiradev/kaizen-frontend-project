@@ -41,7 +41,7 @@
 }
 
 #header .left a h2 span {
-  color: #FFF;
+  color: #fff;
 }
 
 #header nav {
@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #2f2f2fbe;
+  background-color: var(--bg-navbar);
   padding: 0 4.5rem;
 }
 
@@ -61,12 +61,11 @@
 }
 
 #header nav ul li a {
-  animation: textAnimation 1s;
-  text-decoration: none;
-  /* color: var(--grey); */
-  color: #FFF;
-  transition: all 0.3s ease-in-out;
   font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
   padding: 0.2rem 0.6rem;
   border-radius: 10px;
 }
@@ -150,6 +149,7 @@
   }
 
   .btnMenu {
+    z-index: 100;
     display: block;
     border: none;
     cursor: pointer;

@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Home } from "./routes/Home/Home.tsx";
 import { Contact } from "./routes/Contact/Contact.tsx";
 import { Qualities } from "./routes/Qualities/Qualities.tsx";
+import { NotFound } from "./components/NotFound/NotFound.tsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/qualities",
         element: <Qualities />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },

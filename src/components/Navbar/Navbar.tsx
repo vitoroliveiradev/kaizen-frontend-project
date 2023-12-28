@@ -5,6 +5,8 @@ import { NavLink } from "react-router-dom";
 
 import { CiMenuFries } from "react-icons/ci";
 
+import { motion } from "framer-motion";
+
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -19,7 +21,13 @@ export const Navbar = () => {
           </NavLink>
         </div>
         <div className={styles.right}>
-          <ul className={showMenu == true ? styles.showList : ""}>
+          <motion.ul
+            initial={{ opacity: 0, x: 300 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            exit={{ opacity: 0, x: 300 }}
+            className={showMenu == true ? styles.showList : ""}
+          >
             <button
               className={styles.btnClose}
               onClick={() => setShowMenu(false)}
@@ -40,7 +48,7 @@ export const Navbar = () => {
             <li onClick={() => setShowMenu(false)}>
               <NavLink to="/contact">Contato</NavLink>
             </li>
-          </ul>
+          </motion.ul>
           <button className={styles.btnMenu} onClick={() => setShowMenu(true)}>
             <CiMenuFries />
           </button>
