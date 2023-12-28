@@ -2,11 +2,19 @@ import styles from "./Notice.module.css";
 
 import NoticeImage from "../../assets/5s-image.jpg";
 
+import { motion } from "framer-motion";
+
 export const Notice = () => {
   return (
     <section className={styles.noticeContainer}>
       <div className={styles.noticeContent}>
-        <div className={styles.left}>
+        <motion.div
+          className={styles.left}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          exit={{ opacity: 0, x: -100 }}
+        >
           <h3>Já ouviu falar sobre o 5´S ?</h3>
           <p>
             O 5'S é uma filosofia japonesa que tem o objetivo de promover a
@@ -21,10 +29,16 @@ export const Notice = () => {
             use-a e a retorne ao mesmo local. Além disso, ele evita que o espaço
             de trabalho se torne bagunçado com equipamentos desnecessários.
           </p>
-        </div>
-        <div className={styles.right}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          exit={{ opacity: 0, x: 100 }}
+          className={styles.right}
+        >
           <img src={NoticeImage} alt="Imagem sobre a notícia" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -18,7 +18,11 @@ export const About = () => {
           transition={{ duration: 0.5 }}
           exit={{ opacity: 0, y: 200, scale: 0.5 }}
         >
-          {AboutImage && <img src={AboutImage} alt="imagem sobre a empresa" />}
+          {AboutImage ? (
+            <img src={AboutImage} alt="imagem sobre a empresa" />
+          ) : (
+            <p>Carregando...</p>
+          )}
         </motion.div>
 
         <div className={styles.right}>

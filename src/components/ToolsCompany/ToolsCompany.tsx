@@ -8,9 +8,24 @@ export const ToolsCompany = () => {
     <section className={styles.toolsContainer}>
       <Title title="Ferramentas da Empresa" />
       <div className={styles.containerCards}>
-        <ToolCard />
-        <ToolCard />
-        <ToolCard />
+        <ToolCard
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          exit={{ opacity: 0, x: -100 }}
+        />
+        <ToolCard
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          exit={{ opacity: 0, x: -100 }}
+        />
+        <ToolCard
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          exit={{ opacity: 0, x: -100 }}
+        />
       </div>
     </section>
   );
