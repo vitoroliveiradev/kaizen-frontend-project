@@ -1,8 +1,8 @@
 .steps {
   display: flex;
-  gap: 4rem;
   justify-content: center;
   align-items: center;
+  gap: 4rem;
   max-width: 400px;
   margin: 0 auto;
   position: relative;
@@ -39,6 +39,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  .steps {
+    gap: 3rem;
+  }
+
+  .steps::after {
+    border: none;
+  }
+
   .step {
     width: 30px;
     display: flex;
@@ -52,7 +60,7 @@
   }
 
   .steps p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .steps::after {

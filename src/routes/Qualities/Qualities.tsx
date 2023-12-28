@@ -130,7 +130,11 @@ export const Qualities = () => {
         className={styles.content}
       >
         {listProps.map((item) => (
-          <QualitiesCard title={item.title} content={item.content} />
+          <QualitiesCard
+            key={item.id}
+            title={item.title}
+            content={item.content}
+          />
         ))}
       </motion.div>
     </div>

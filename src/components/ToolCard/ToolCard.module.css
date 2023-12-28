@@ -1,6 +1,9 @@
 .containerCards {
   width: 280px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .containerCards:hover {
@@ -21,7 +24,7 @@
 }
 
 .cardFront {
-  width: 130px;
+  width: 140px;
   border-radius: 15px;
   background-color: #f5f7fa;
   border: 2px solid var(--bg-primary);
@@ -33,4 +36,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cardBottom {
+    width: 240px;
+  }
 }

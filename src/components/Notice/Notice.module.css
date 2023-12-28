@@ -44,6 +44,12 @@
     flex-direction: column;
   }
 
+  
+  .left p {
+    letter-spacing: 1.2px;
+    font-size: 0.7rem;
+  }
+
   .right {
     border: none;
   }
@@ -52,4 +58,6 @@
   .right span {
     font-size: .8rem;
   }
+
+  
 }

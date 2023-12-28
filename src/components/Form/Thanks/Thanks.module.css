@@ -28,3 +28,14 @@
 .review-data span {
   font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+  .thanks-container h3 {
+    font-size: 1rem;
+  }
+
+  .review-data span,
+  .thanks-container p {
+    font-size: 0.8rem;
+  }
+}

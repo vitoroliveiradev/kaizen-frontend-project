@@ -58,8 +58,7 @@ export const SliderComponent = () => {
             <p>
               Com objetivo de sustentar os projetos desenvolvemos ferramentas
               eletrônicas de gestão, consideradas como um dos pilares da
-              indústria 4.0, ferramentas com capacidade de gerenciar todas as
-              informações e o conhecimento gerado a partir dos processos.
+              indústria 4.0.
             </p>
           </motion.div>
           <motion.div

@@ -9,8 +9,6 @@ type ThanksProps = {
 };
 
 export const Thanks = ({ data }: ThanksProps) => {
-  
-
   return (
     <div className={styles["thanks-container"]}>
       <h3>Aqui está o resumo de seu contato: {data.name}</h3>

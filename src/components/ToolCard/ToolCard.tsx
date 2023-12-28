@@ -1,16 +1,48 @@
 import styles from "./ToolCard.module.css";
-import image from "../../assets/tool-1.png";
 
 import { motion } from "framer-motion";
-import { ComponentProps } from "react";
 
-export const ToolCard = (props: ComponentProps<typeof motion.div>) => {
+type ToolCardProps = {
+  initial: {
+    opacity: number;
+    x: number;
+  };
+  whileInView: {
+    opacity: number;
+    x: number;
+  };
+  transition: {
+    duration: number;
+    delay: number;
+  };
+  exit: {
+    opacity: number;
+    x: number;
+  };
+  title: string;
+  img: string;
+};
+
+export const ToolCard = ({
+  initial,
+  whileInView,
+  transition,
+  exit,
+  title,
+  img,
+}: ToolCardProps) => {
   return (
-    <motion.div className={styles.containerCards} {...props}>
+    <motion.div
+      initial={{ ...initial }}
+      whileInView={{ ...whileInView }}
+      transition={{ ...transition }}
+      exit={{ ...exit }}
+      className={styles.containerCards}
+    >
       <div className={styles.cardBottom}>
-        <img src={image} alt="image" />
+        <img src={img} alt="image" />
         <div className={styles.cardFront}>
-          <h3>E-5´S</h3>
+          <h3>{title}</h3>
         </div>
       </div>
     </motion.div>
