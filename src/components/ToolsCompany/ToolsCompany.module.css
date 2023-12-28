@@ -6,3 +6,25 @@
   gap: 2rem;
   flex-wrap: wrap;
 }
+
+.showMoreContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.showMore {
+  text-decoration: none;
+  border: 1px solid var(--bg-primary);
+  color: var(--bg-primary);
+  padding: .3rem 2rem;
+  border-radius: 10px;
+  transition: all .3s ease;
+}
+
+.showMore:hover {
+  background-color: #333;
+  color: #FFF;
+  border-color: #333;
+}

@@ -35,6 +35,9 @@ export const Navbar = () => {
               </NavLink>
             </li>
             <li onClick={() => setShowMenu(false)}>
+              <NavLink to="/qualities">Ferramentas</NavLink>
+            </li>
+            <li onClick={() => setShowMenu(false)}>
               <NavLink to="/contact">Contato</NavLink>
             </li>
           </ul>

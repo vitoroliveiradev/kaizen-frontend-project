@@ -2,6 +2,7 @@ import styles from "./ToolsCompany.module.css";
 
 import { Title } from "../Title/Title";
 import { ToolCard } from "../ToolCard/ToolCard";
+import { NavLink } from "react-router-dom";
 
 export const ToolsCompany = () => {
   return (
@@ -26,6 +27,11 @@ export const ToolsCompany = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           exit={{ opacity: 0, x: -100 }}
         />
+      </div>
+      <div className={styles.showMoreContainer}>
+        <NavLink to="/qualities" className={styles.showMore}>
+          Ver mais
+        </NavLink>
       </div>
     </section>
   );

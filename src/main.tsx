@@ -5,6 +5,7 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Home } from "./routes/Home/Home.tsx";
 import { Contact } from "./routes/Contact/Contact.tsx";
+import { Qualities } from "./routes/Qualities/Qualities.tsx";
 
 const router = createBrowserRouter([
   {
@@ -19,12 +20,16 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+        path: "/qualities",
+        element: <Qualities />,
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-  <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
